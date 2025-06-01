@@ -1,0 +1,163 @@
+(* Content-type: application/vnd.wolfram.cdf.text *)
+
+(*** Wolfram CDF File ***)
+(* http://www.wolfram.com/cdf *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*************************************************************************)
+(*                                                                       *)
+(*                                                                       *)
+(*  This file was created under the Wolfram Enterprise licensing terms.  *)
+(*                                                                       *)
+(*       For additional information concerning CDF licensing see:        *)
+(*                                                                       *)
+(*        www.wolfram.com/cdf/adopting-cdf/licensing-options.html        *)
+(*                                                                       *)
+(*                                                                       *)
+(*                                                                       *)
+(*************************************************************************)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[      1060,         20]
+NotebookDataLength[      4786,        140]
+NotebookOptionsPosition[      4787,        130]
+NotebookOutlinePosition[      5196,        146]
+CellTagsIndexPosition[      5153,        143]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "Abrir", " ", "el", " ", "archivo", " ", "en", " ", "modo", " ", 
+    "binario"}], "*)"}], 
+  RowBox[{
+   RowBox[{
+    RowBox[{"stream", "=", 
+     RowBox[{"OpenRead", "[", 
+      RowBox[{"\"\<C:\\\\Users\\\\saidt\\\\Downloads\\ratpiloto.BIN\>\"", ",", 
+       RowBox[{"BinaryFormat", "->", "True"}]}], "]"}]}], ";"}], "\n", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Leer", " ", "todos", " ", "los", " ", "bytes", " ", "del", " ", 
+     "archivo"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"datos", "=", 
+     RowBox[{"BinaryReadList", "[", 
+      RowBox[{"stream", ",", "\"\<Byte\>\""}], "]"}]}], ";"}], "\n", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Cerrar", " ", "el", " ", "stream"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Close", "[", "stream", "]"}], ";"}], "\n", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Mostrar", " ", "el", " ", "contenido"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Print", "[", "\"\<Contenido del archivo:\>\"", "]"}], ";"}], 
+   "\n", 
+   RowBox[{
+    RowBox[{"Print", "[", "datos", "]"}], ";"}], "\n"}]}]], "Input",
+ CellChangeTimes->{{3.94912581610972*^9, 3.949125816125345*^9}, {
+  3.9491260016693*^9, 3.9491260105022755`*^9}, {3.9491261000119705`*^9, 
+  3.9491261776617184`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"710d9220-22a3-dc49-b0ce-0a6a67624239"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "OpenRead", "noopen", 
+   "\"Cannot open \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"C:\\\\\\\\\\\\\\\\Users\\\\\\\\\\\\\\\\saidt\\\\\
+\\\\\\\\\\\\Downloads\\\\\\\\ratpiloto.BIN\\\\\\\"\\\"}]\\).\"", 2, 1, 1, 
+   33479763543574915572, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.9491262704058685`*^9},
+ CellLabel->
+  "Durante la evaluaci\[OAcute]n de \
+In[1]:=",ExpressionUUID->"6e9442e9-8f2f-ef4e-8e6f-1b7804308b6b"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "BinaryReadList", "stream", 
+   "\"\\!\\(\\*RowBox[{\\\"$Failed\\\"}]\\) is not a string, SocketObject, \
+InputStream[ ], or OutputStream[ ].\"", 2, 2, 2, 33479763543574915572, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.9491262707496185`*^9},
+ CellLabel->
+  "Durante la evaluaci\[OAcute]n de \
+In[1]:=",ExpressionUUID->"026acc97-e111-044e-ad87-67a1c90a36b2"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Close", "stream", 
+   "\"\\!\\(\\*RowBox[{\\\"$Failed\\\"}]\\) is not a string, SocketObject, \
+InputStream[ ], or OutputStream[ ].\"", 2, 3, 3, 33479763543574915572, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.9491262707808876`*^9},
+ CellLabel->
+  "Durante la evaluaci\[OAcute]n de \
+In[1]:=",ExpressionUUID->"6854d4ed-5031-3e4e-b92a-664ffeb9d0fd"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"Contenido del archivo:\"\>"], "Print",
+ CellChangeTimes->{3.9491262707965145`*^9},
+ CellLabel->
+  "Durante la evaluaci\[OAcute]n de \
+In[1]:=",ExpressionUUID->"1758f9a0-fef5-1741-9505-4bb2aff21a67"],
+
+Cell[BoxData[
+ RowBox[{"BinaryReadList", "[", 
+  RowBox[{"$Failed", ",", "\<\"Byte\"\>"}], "]"}]], "Print",
+ CellChangeTimes->{3.9491262708121204`*^9},
+ CellLabel->
+  "Durante la evaluaci\[OAcute]n de \
+In[1]:=",ExpressionUUID->"61b474a5-bf80-624a-a2e0-c94ca181ded3"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{569.25, 450.75},
+WindowMargins->{{221.25, Automatic}, {Automatic, 33}},
+FrontEndVersion->"14.1 para Microsoft Windows (64-bit) (July 16, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c5b89568-a500-f641-b274-ee88deec05f4"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[1482, 35, 1459, 38, 373, "Input",ExpressionUUID->"710d9220-22a3-dc49-b0ce-0a6a67624239"],
+Cell[2944, 75, 463, 11, 44, "Message",ExpressionUUID->"6e9442e9-8f2f-ef4e-8e6f-1b7804308b6b"],
+Cell[3410, 88, 422, 10, 26, "Message",ExpressionUUID->"026acc97-e111-044e-ad87-67a1c90a36b2"],
+Cell[3835, 100, 413, 10, 26, "Message",ExpressionUUID->"6854d4ed-5031-3e4e-b92a-664ffeb9d0fd"],
+Cell[CellGroupData[{
+Cell[4273, 114, 216, 4, 22, "Print",ExpressionUUID->"1758f9a0-fef5-1741-9505-4bb2aff21a67"],
+Cell[4492, 120, 267, 6, 22, "Print",ExpressionUUID->"61b474a5-bf80-624a-a2e0-c94ca181ded3"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
